@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Κατάστημα Αθλητικών Ειδών</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="images/logo.png" alt="Logo Καταστήματος"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Αρχική</a></li>
+                <li><a href="#products">Προϊόντα</a></li>
+                <li><a href="#about">Σχετικά</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Καλώς ήρθατε στο Κατάστημα Αθλητικών Ειδών</h1>
+            <p>Εδώ θα βρείτε όλα όσα χρειάζεστε για τις αθλητικές σας δραστηριότητες.</p>
+        </section>
+
+        <section id="products">
+            <h2>Τα Προϊόντα μας</h2>
+            <div class="product">
+                <img src="images/product1.jpg" alt="Προϊόν 1">
+                <h3>Ανδρικά</h3>
+                <p>Άνετα και σικάτα παπούτσια για το τρέξιμο.</p>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Προϊόν 2">
+                <h3>Γυναικεία</h3>
+                <p>Η μόδα δεν σταματάει στην άθληση!</p>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Προϊόν 3">
+                <h3>Παιδικά</h3>
+                <p>Για τους μικρούς μας φίλους.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Σχετικά με Εμάς</h2>
+            <p>Το κατάστημά μας προσφέρει μια μεγάλη γκάμα αθλητικών ειδών για επαγγελματίες και ερασιτέχνες αθλητές.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Επικοινωνία</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Όνομα:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Μήνυμα:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Αποστολή</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Κατάστημα Αθλητικών Ειδών. Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
